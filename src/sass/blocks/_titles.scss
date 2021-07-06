@@ -3,4 +3,10 @@
     font-weight: 700;
     color: $near-black;
     text-align: center;
+    text-transform: uppercase;
+    &_left{
+        color: $white;
+        text-align: left;
+        font-size: 36px;
+    }
 }
