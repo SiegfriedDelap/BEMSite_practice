@@ -1,0 +1,37 @@
+.comments{
+    min-height: 950px;
+    padding-bottom: 71px;
+    &__wrapper{
+        margin-top: 92px;
+        display: flex;
+        &:nth-child(2){
+            margin-top: 70px;
+        }
+    }
+    &__img{
+        height: 169px;
+        width: 169px;
+    }
+    &__text{
+       padding-right: 60px;
+       margin-left: 62px;
+    }
+    &__subtitle{
+        font-size: 18px;
+        font-weight: 700;
+        color: #0d0d0d;
+    }
+    &__descr{
+        margin-top: 19px;
+        font-size: 16px;
+        font-weight: 300;
+        color: #0d0d0d;
+    }
+    &__number{
+        margin-top: 10px;
+        font-size: 14px;
+        font-weight: 300;
+        color: #646464;
+    }
+
+}
