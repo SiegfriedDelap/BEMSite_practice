@@ -45,6 +45,24 @@ function toggleSlide(className) {
 toggleSlide(".catalog-item__link");
 toggleSlide(".catalog-item__back");
 
+//Modal
+
+$('[data-modal=consultation]').on('click', function(){
+    $('.overlay, #consultation').fadeIn('slow');
+});
+
+$('.modalwindow__close').on('click', function(){
+    $('.overlay, #consultation, #thanks, #order').fadeOut('slow');
+});
+
+$('.button_buy').each(function(i){
+    $(this).on('click', function(){
+        $('#order .modalwindow__descr').text($('.catalog-item__subtitle').eq(i).text()); //вытаскиваем текст из любой карты товара
+        $('.overlay, #order').fadeIn('slow');
+    });
+});
+
+
 
 });
 //$ получение класса Slick Slider
