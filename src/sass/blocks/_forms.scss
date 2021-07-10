@@ -20,4 +20,14 @@
     &_mart25{
         margin-top: 25px;
     }
+    .error{
+        border: 2px solid $main-color;
+    }
+    label.error{
+        color: $white;
+        border: none;
+        text-align: center;
+        font-size: 14px;
+        padding-bottom: 10px;
+    }
 }

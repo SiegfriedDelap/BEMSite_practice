@@ -42,6 +42,16 @@
     &_mini{
         min-height: 140px;
     }
+    .error{
+        border: 1px solid $main-color;
+    }
+    label.error{
+        color:#0d0d0d;
+        border: none;
+        text-align: center;
+        font-size: 14px;
+        padding-bottom: 20px;
+    }
 }
 
 #consultation, #order, #thanks {
