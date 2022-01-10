@@ -1,3 +1,33 @@
+@-webkit-keyframes heartbeat {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes heartbeat {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
 * {
   font-family: 'Museo Sans Cyrl', sans-serif;
 }
@@ -233,6 +263,16 @@
 .advantages__descr a {
   color: #ff0000;
   text-decoration: underline;
+}
+
+.advantages__icon_animated {
+  -webkit-animation: heartbeat 1.5s linear infinite;
+          animation: heartbeat 1.5s linear infinite;
+}
+
+.advantages__icon_animated:hover {
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
 }
 
 .consultation {
