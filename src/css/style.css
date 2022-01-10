@@ -724,4 +724,17 @@
 #consultation, #order, #thanks {
   display: none;
 }
+
+.pageup {
+  display: none;
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  height: 40px;
+  width: 40px;
+}
+
+.pageup img {
+  width: 100%;
+}
 /*# sourceMappingURL=style.css.map */
