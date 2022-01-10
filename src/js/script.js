@@ -129,6 +129,11 @@ $(window).scroll(function(){
 
 });
 
+//WOW
+
+new WOW({
+    animateClass:'animate__animated'
+}).init();
 
 });
 //$ получение класса Slick Slider
