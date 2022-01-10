@@ -57,6 +57,8 @@
         padding: 20px 20px 26px 20px;
         overflow: hidden;
         margin-bottom: 20px;
+
+
         &__img{
             display: block;
             margin: 0 auto;
@@ -125,50 +127,52 @@
                 margin-right: 20px
             }
         }
-        &__list{
-            position: relative;
+
+        &__block {
             width: 50%;
-            margin-left: 20px;
             transform: translateX(0%);
             padding-right: 20px;
-            padding-left: 19px;
-            margin-left: 0;
-            list-style-type: none;
-            transition: 0.5s all;            
-            &_active{
+            transition: 0.5s all;
+            margin-bottom: 0;
+            &_active {
                 transform: translateX(-100%);
-                margin-left: 0px
+                margin-right: 0px;
             }
-            li {
-                position: relative;
-                font-size: 14px;
-                font-weight: 300;
-                color: #555555;
-                margin-bottom: 20px;
-                &:before{
-                    content: '';
-                    position: absolute;
-                    width: 5px;
-                    height: 5px;
-                    background-color: $main-color;
-                    top: 8px;
-                    left: -14px;
+            &__list {
+                list-style-type: none;
+                padding-inline-start: 30px;
+                li {
+                    position: relative;
+                    font-size: 14px;
+                    font-weight: 300;
+                    color: #555555;
+                    margin-bottom: 20px;
+                    &:before {
+                        content: '';
+                        position: absolute;
+                        width: 5px;
+                        height: 5px;
+                        background-color: $main-color;
+                        left: -14px;
+                        top: 7px;
+                    }
                 }
             }
-        }
-        &__back{
-            position: absolute;
-            bottom: 0;
-            left: 50%;
-            transform: translateX(calc(-50% - 19px));
-            display: block;
-            color: $main-color;
-            font-size: 14px;
-            font-weight: 500;
-            text-decoration: underline;
-            text-transform: uppercase;
-            &:hover{
+
+            &__back {
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                transform: translateX(calc(-50% - 19px));
+                display: block;
                 color: $main-color;
+                font-size: 14px;
+                font-weight: 500;
+                text-decoration: underline;
+                text-transform: uppercase;
+                &:hover {
+                    color:$main-color
+                }
             }
         }
     }   
